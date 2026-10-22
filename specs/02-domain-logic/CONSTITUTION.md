@@ -1,0 +1,6 @@
+# Constitution: Fase 02 - Core Domain
+
+1. **Pureza Absoluta do Domínio:** O projeto `SmartExchange.Domain` deve permanecer 100% agnóstico a bibliotecas externas, frameworks de serialização (sem atributos como `[JsonPropertyName]`) ou persistência.
+2. **Precisão Financeira Inegociável:** Qualquer manipulação monetária, taxa ou percentual deve usar estritamente `decimal`. Arredondamentos devem ser explícitos usando `MidpointRounding.ToEven` (Banker's Rounding) ou `MidpointRounding.AwayFromZero`, padronizados em 4 a 6 casas decimais para taxas e 2 casas para quantias finais.
+3. **Imutabilidade e Auto-validação:** Value Objects (`Currency`, `Money`) devem ser imutáveis (preferencialmente `readonly record struct` ou `record`) e devem lançar exceções de domínio expressivas (`DomainException`) se instanciados em estado inválido.
+4. **Cobertura de Testes Unitários:** O cálculo das estratégias de spread e as operações de `Money` devem ter 100% de cobertura de testes unitários com testes de mutação de valores e casos de borda (divisão por zero, valores negativos).
