@@ -1,0 +1,15 @@
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\bin\Debug\net9.0\SmartExchange.Application.deps.json
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\bin\Debug\net9.0\SmartExchange.Application.dll
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\bin\Debug\net9.0\SmartExchange.Application.pdb
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\bin\Debug\net9.0\SmartExchange.Domain.dll
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\bin\Debug\net9.0\SmartExchange.Domain.pdb
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\obj\Debug\net9.0\SmartExchange.Application.csproj.AssemblyReference.cache
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\obj\Debug\net9.0\SmartExchange.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\obj\Debug\net9.0\SmartExchange.Application.AssemblyInfoInputs.cache
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\obj\Debug\net9.0\SmartExchange.Application.AssemblyInfo.cs
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\obj\Debug\net9.0\SmartExchange.Application.csproj.CoreCompileInputs.cache
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\obj\Debug\net9.0\SmartExc.5AEE72B9.Up2Date
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\obj\Debug\net9.0\SmartExchange.Application.dll
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\obj\Debug\net9.0\refint\SmartExchange.Application.dll
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\obj\Debug\net9.0\SmartExchange.Application.pdb
+C:\Users\Felipe_Assis\Desktop\ESTUDOS_PLENO\Dia06\SmartExchange\src\SmartExchange.Application\obj\Debug\net9.0\ref\SmartExchange.Application.dll

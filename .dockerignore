@@ -1,0 +1,26 @@
+# Artefatos de build e saída do .NET
+**/bin
+**/obj
+**/out
+
+# Metadados de IDE e controle de versão
+.git
+.gitignore
+.vs
+.vscode
+.idea
+**/*.user
+**/*.suo
+
+# Arquivos de especificação e documentação (não fazem parte da imagem)
+specs
+**/*.md
+
+# Dockerfiles e arquivos de orquestração locais
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Ambiente local e segredos
+**/.env
+**/secrets.json
