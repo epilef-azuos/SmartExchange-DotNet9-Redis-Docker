@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\SmartExchange.Domain\SmartExchange.Domain.csproj" />
     <ProjectReference Include="..\..\src\SmartExchange.Application\SmartExchange.Application.csproj" />
+    <ProjectReference Include="..\..\src\SmartExchange.Infrastructure\SmartExchange.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

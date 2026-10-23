@@ -1,0 +1,6 @@
+# Constitution: Fase 03 - Infraestrutura HTTP, Resiliência e CI/CD
+
+1. **Inversão de Dependência Estrita (DIP):** O contrato da API externa (`IExchangeRateProvider`) deve residir obrigatoriamente em `SmartExchange.Application`. A implementação concreta (`FrankfurterApiClient`) e suas configurações de serialização residem exclusivamente em `SmartExchange.Infrastructure`.
+2. **Resiliência Nativa .NET 9:** A configuração de tolerância a falhas deve utilizar o pacote `Microsoft.Extensions.Http.Resilience`, evitando bibliotecas legadas de encapsulamento manual. O pipeline deve contemplar Retry com Exponential Backoff, Circuit Breaker e Timeout.
+3. **Isolamento de Testes Unitários:** Nenhum teste unitário ou de pipeline CI pode disparar chamadas HTTP reais contra a internet. Todas as integrações com `HttpClient` devem ser validadas usando mocks de `HttpMessageHandler`.
+4. **Governança de CI/CD:** A pipeline do GitHub Actions deve executar a restauração, compilação estrita e execução da suíte de testes unitários para todo `push` ou `pull_request` mirando a branch `main` ou branches `feature/**`.
