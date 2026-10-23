@@ -25,7 +25,8 @@ Fase: 01 - Core Setup
 ## 3. Infraestrutura Local (Docker)
 - [x] Criar `.dockerignore` na raiz.
 - [x] Criar `docker-compose.yml` na raiz com os serviços:
-  - `postgres` (imagem `postgres:16-alpine`, porta `5432:5432`, volume mapeado, credenciais padrão).
+  - `postgres` (imagem `postgres:16-alpine`, porta `5434:5432`, volume mapeado, credenciais padrão).
+  - Ajuste pós-fase: a porta do host era `5432:5432` na entrega original; foi alterada para `5434` na Fase 04, por conflito com o PostgreSQL 15 nativo do Windows. Ver `specs/04-cache-redis-audit-db/SPEC.md`, seção 4.
   - `redis` (imagem `redis:7-alpine`, porta `6379:6379`).
 
 ## 4. Validação e Baseline de Compilação

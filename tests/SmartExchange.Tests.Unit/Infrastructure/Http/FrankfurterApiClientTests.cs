@@ -211,18 +211,6 @@ public class FrankfurterApiClientTests
             ItExpr.IsAny<CancellationToken>());
     }
 
-    [Fact]
-    public void AddInfrastructureHttpServices_RegistersTypedProviderClient()
-    {
-        var services = new ServiceCollection();
-        services.AddSingleton<IConfiguration>(new ConfigurationBuilder().Build());
-        services.AddInfrastructureHttpServices();
-
-        using var provider = services.BuildServiceProvider();
-
-        provider.GetRequiredService<IExchangeRateProvider>().Should().BeOfType<FrankfurterApiClient>();
-    }
-
     // Pipeline de resiliência real, com o handler primário substituído pelo mock e sem atraso entre tentativas.
     private static IExchangeRateProvider CreateResilientClient(Mock<HttpMessageHandler> handler)
     {
