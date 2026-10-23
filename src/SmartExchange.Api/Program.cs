@@ -35,3 +35,6 @@ if (app.Environment.IsDevelopment())
 app.MapExchangeEndpoints();
 
 app.Run();
+
+// Permite ao WebApplicationFactory<Program> da suíte de integração acessar o ponto de entrada.
+public partial class Program;

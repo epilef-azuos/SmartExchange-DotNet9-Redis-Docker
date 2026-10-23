@@ -1,0 +1,6 @@
+# Constitution: Fase 06 - Empacotamento Docker, Orquestração e Testcontainers
+
+1. **Princípio do Menor Privilégio e Multi-Stage Build:** O `Dockerfile` deve utilizar builds multi-estágio (`sdk:9.0` para build/publish e `aspnet:9.0-alpine` ou `aspnet:9.0` para runtime). A imagem final deve rodar estritamente com usuário sem privilégios administrativos (`USER app`), eliminando arquivos de build, ferramentas desnecessárias e minimizando a superfície de ataque.
+2. **Determinismo em Testes de Integração:** Testes de integração não devem depender de serviços externos pré-iniciados na máquina do desenvolvedor nem de mocks de persistência. Devem utilizar instâncias reais isoladas via `Testcontainers.PostgreSql` e `Testcontainers.Redis` com alocação dinâmica de portas para evitar conflitos de porta em execução paralela ou em runners de CI.
+3. **Resiliência e Inicialização Ordenada no Compose:** O `docker-compose.yml` deve definir `healthcheck` explícito para o PostgreSQL (`pg_isready`) e Redis (`redis-cli ping`). O serviço da API deve aguardar a prontidão real dos bancos via condição `service_healthy`.
+4. **Isolamento de Estado entre Testes:** Cada fixture de teste de integração deve aplicar migrações/criação de schema de forma controlada (`IAsyncLifetime`) e garantir teardown limpo dos contêineres ao término da execução.
